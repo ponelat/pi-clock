@@ -15,6 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sync": "rm -rf pi/build; cp -R build pi/build && rsync -avz -e ssh ./pi pi@joshpi.local:pi-clock"
   }
 }
