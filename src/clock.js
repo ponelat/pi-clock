@@ -27,16 +27,15 @@ export default class Clock extends Component {
 
     return (
       <div className="clock">
+        <div className="date">
+          <div className="day">{day}</div>
+          <div className="month">{month}</div>
+        </div>
+
         <div className="time">
           <div className="hours">{hours}</div>
           <div className={"separator " + separatorOn}>:</div>
           <div className="minutes">{minutes}</div>
-        </div>
-        <div className="date">
-          <div className="dayOfWeek">{dayOfWeek}</div>
-          <div className="day">{day}</div>
-          /
-          <div className="month">{month}</div>
         </div>
       </div>
     )
