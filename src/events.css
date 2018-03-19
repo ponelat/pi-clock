@@ -1,0 +1,30 @@
+.events {
+  position: absolute;
+  top: 16em;
+  left: 6em;
+}
+
+.event {
+  /* box-shadow: 2px 2px 5px grey; */
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+.events .summary {
+  padding: 0.3em;
+  padding-right: 10em;
+  background: rgba(255,255,255,0.2);
+  border-radius: 5px;
+  border-right: 5px solid #ffee2f;
+  border-top: 5px solid #ffee2f;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.events .timeTill {
+  font-weight: bold;
+  color: white;
+  position: relative;
+  font-size: 2em;
+  border-bottom: 5px solid #333;
+}

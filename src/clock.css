@@ -3,36 +3,33 @@
   top: 1em;
   left: 1em;
   animation: opacity 0.5s;
-  font-size: 52px;
-  width: 400px;
+  font-size: 60px;
   padding: 0.5em;
-  background: rgba(255,255,255,0.3);
-  border-radius: 4px;
-  text-shadow: 1px 1px 5px rgba(255,255,255,0.8);
-  color: #2a302a;
+  /* background: rgba(255,255,255,0.3); */
+  color: #eee;
 }
 .clock .date {
   display: inline-block;
+  font-size: 0.8em;
 }
 .clock .date > * {
   display: inline-block;
-  font-size: 0.8em;
 }
 .clock .date .month {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 .clock .date .day {
-  font-size: 1em;
   padding-right: 0.2em;
-  /* font-weight: bold; */
+  font-weight: bold;
 }
 .clock .time {
-  padding-left: 1em;
+  border-bottom: 6px solid #333;
+  padding-left: 0.5em;
   display: inline-block;
   text-align: center;
   font-weight: bold;
   font-family: "Ubuntu Mono", monospace;
-  color: #222;
+  color: #eee;
   font-size: 60px;
 }
 

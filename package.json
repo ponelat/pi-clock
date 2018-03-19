@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.4",
     "moment": "^2.19.2",
     "react": "^15.6.1",
+    "react-circular-progressbar": "^0.5.0",
     "react-dom": "^15.6.1",
+    "react-icons": "^2.2.7",
     "serve": "^6.4.1"
   },
   "devDependencies": {
@@ -16,6 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "sync": "rm -rf pi/build; cp -R build pi/build && rsync -avz -e ssh ./pi pi@joshpi.local:pi-clock"
+    "sync": "rm -rf pi/build; cp -R build pi/build && rsync -avz -e ssh ./pi pi@joshpi.local:pi-clock",
+    "refresh": "ssh pi@joshpi.local pi-clock/pi/refresh.sh",
+    "fetch-data": "bash -c ./src/get-test-status.sh > ./src/data/release_testruns.json",
+    "go": "npm run fetch-data && npm run build && npm run sync && npm run refresh"
   }
 }
