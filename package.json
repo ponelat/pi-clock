@@ -23,6 +23,6 @@
     "sync": "rm -rf pi/build; cp -R build pi/build && rsync -avz -e ssh ./pi pi@joshpi.local:pi-clock",
     "refresh": "ssh pi@joshpi.local pi-clock/pi/refresh.sh",
     "fetch-data": "bash -c ./src/get-test-status.sh > ./src/data/release_testruns.json",
-    "go": "npm run fetch-data && npm run build && npm run sync && npm run refresh"
+    "go": "npm run build && npm run sync && npm run refresh"
   }
 }

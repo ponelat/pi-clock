@@ -7,8 +7,9 @@ export default class Clock extends Component {
   state = {
     lastUpdated: null,
     events: [
+      {summary: 'SDES Daily Standup', start: moment('12:00', 'HH:mm')},
+      {summary: 'on-prem standup', start: moment('12:30', 'HH:mm')},
       {summary: 'Done for the day', start: moment('18:15', 'HH:mm')},
-      {summary: 'Standup', start: moment('2017-11-27 17:30')}
     ]
   }
 
